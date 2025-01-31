@@ -1,1 +1,27 @@
-/*  your css code here. If applicable */
+#container {
+    margin: 20px; /* Set a margin of 20px to the container */
+    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    background-color: #f9f9f9; /* Optional: Background color for the container */
+    border: 1px solid #ccc; /* Optional: Border for the container */
+}
+
+/* Pseudo-element for content before the container */
+#container::before {
+    content: "Before Content"; /* Text to insert before the main content */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    display: block; /* Make it a block element */
+    margin-bottom: 10px; /* Space below the inserted content */
+}
+
+/* Pseudo-element for content after the container */
+#container::after {
+    content: "After Content"; /* Text to insert after the main content */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    display: block; /* Make it a block element */
+    margin-top: 10px; /* Space above the inserted content */
+}
+
+
